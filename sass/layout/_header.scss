@@ -1,0 +1,43 @@
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logo logo" "nav1 nav2";
+  justify-items: center;
+  align-items: center;
+  background-color: $color-fondo;
+
+  img{
+    width: 100px;
+    grid-area: logo;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius:  10px;
+    &:hover {
+      background-color: white;
+      border: 1px solid palevioletred;
+      color: black;
+    }
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #nav1 {
+    grid-area: nav1;
+  }
+
+  #nav2 {
+    grid-area: nav2;
+  }  
+}

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url(../Assets/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+/**INICIO**/
+body {
+  font-family: "nunito", !important;
+  width: $ancho;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px auto auto 200px;
+  grid-template-areas: "header" "texto" "video" "footer";
+}
+
+article {
+  grid-area: texto;
+  margin: 20px;
+}
+
+article h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+article p {
+  padding-top: 50px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+aside {
+  grid-area: video;
+}
+
+aside iframe {
+  width: $ancho;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  background-color: $color-fondo;
+  flex-direction: row;
+  justify-content: space-evenly; /**no queda distribuido**/
+  align-items: center;
+}
+
+footer .footer img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+@media (min-width: 700px) {
+  #container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px auto 200px;
+    grid-template-areas: "header header" "texto video" "footer footer";
+  }
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav1 logo nav2";
+    justify-items: center;
+    align-items: center;
+    background-color: $color-fondo;
+  }
+  footer {
+    flex-direction: row;
+  }
+}
+
+/**MAYORISTAS**/
+
+.container-aside {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  flex: 1;
+}
+
+.img img {
+  width: 250px;
+  height: 250px;
+}
+
+.texto {
+  flex: 2;
+  padding: 20px;
+}
+
+.lista-precios {
+  background-color: lightblue;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.lista-precios :hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.h1-aside-mayoristas {
+  margin-bottom: 20px;
+}
