@@ -143,30 +143,15 @@ footer .footer img {
 
 /**MAYORISTAS**/
 
-.container-aside {
-  display: flex;
-  align-items: center;
+article h1 {
+  margin-top: 20px;
 }
 
-.img {
-  flex: 1;
-}
-
-.img img {
-  width: 250px;
-  height: 250px;
-}
-
-.texto {
-  flex: 2;
-  padding: 20px;
-}
 
 .link-mayoristas {
   background-color: lightblue;
   border: 2px solid #3498db;
   border-radius: 10px;
-  padding: 10px 20px;
   text-decoration: none;
   color: black;
 }
@@ -176,9 +161,11 @@ footer .footer img {
   color: white;
 }
 
-.h1-aside-mayoristas {
-  margin-bottom: 20px;
+aside img {
+  width: 100%;
+  height: auto;
 }
+
 
 
 /**FAQ**/

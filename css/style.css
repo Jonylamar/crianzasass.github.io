@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@
 }
 /**INICIO**/
 body {
-  font-family: "nunito";
+  font-family: "nunito", !important;
   width: 100%;
 }
 
@@ -124,30 +125,14 @@ footer .footer img {
   }
 }
 /**MAYORISTAS**/
-.container-aside {
-  display: flex;
-  align-items: center;
-}
-
-.img {
-  flex: 1;
-}
-
-.img img {
-  width: 250px;
-  height: 250px;
-}
-
-.texto {
-  flex: 2;
-  padding: 20px;
+article h1 {
+  margin-top: 20px;
 }
 
 .link-mayoristas {
   background-color: lightblue;
   border: 2px solid #3498db;
   border-radius: 10px;
-  padding: 10px 20px;
   text-decoration: none;
   color: black;
 }
@@ -157,8 +142,9 @@ footer .footer img {
   color: white;
 }
 
-.h1-aside-mayoristas {
-  margin-bottom: 20px;
+aside img {
+  width: 100%;
+  height: auto;
 }
 
 /**FAQ**/
