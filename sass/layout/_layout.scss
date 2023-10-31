@@ -6,13 +6,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "nunito";
-  src: url(./|);
-}
-/**INICIO**/
 body {
-  font-family: "nunito", !important;
+  font-family: "nunito";
   width: $ancho;
 }
 
@@ -102,17 +97,21 @@ aside iframe {
 footer {
     grid-area: footer;
     display: flex;
-    background-color: $color-fondo;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    background-image: linear-gradient(to right, grey, black);
+    height: 200px;
 }
   
 
 footer .footer img {
     width: 50px;
-    margin: 0 10px;
+    margin: 0 20px;
+    &:hover {
+      transform: translate(20px, -20px);
+    }
+
 }
 
 @media (min-width: 700px){
@@ -230,3 +229,4 @@ aside img {
 .faq .active {
   border: none;
 }
+

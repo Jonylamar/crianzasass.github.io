@@ -5,13 +5,8 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "nunito";
-  src: url(../assets/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
-}
-/**INICIO**/
 body {
-  font-family: "nunito", !important;
+  font-family: "nunito";
   width: 100%;
 }
 
@@ -95,15 +90,19 @@ aside iframe {
 footer {
   grid-area: footer;
   display: flex;
-  background-color: #333;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-image: linear-gradient(to right, grey, black);
+  height: 200px;
 }
 
 footer .footer img {
   width: 50px;
-  margin: 0 10px;
+  margin: 0 20px;
+}
+footer .footer img:hover {
+  transform: translate(20px, -20px);
 }
 
 @media (min-width: 700px) {
@@ -326,13 +325,19 @@ header #nav2 {
 }
 
 .contact-info {
-  background: #333;
+  background: #575471;
   color: #ffffff;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+#pEspecial {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 700px) {
